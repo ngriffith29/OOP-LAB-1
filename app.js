@@ -89,12 +89,12 @@ p5.sayHello();
 // Person4.greet()
 //ES6 SYNTAX
 class Person {
-    constructor(name, city , age){
+    constructor(name, city, age) {
         this.name = name
         this.city = city
         this.age = age
     }
-    greet(){
+    greet() {
         console.log(`My name is ${this.name} I am ${this.age} years old and live in ${this.city}`)
     }
 }
@@ -110,5 +110,7 @@ person7.greet();
 person8.greet();
 person9.greet();
 person10.greet();
+
+//INHERITANCE
 
 
