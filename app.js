@@ -112,5 +112,14 @@ person9.greet();
 person10.greet();
 
 //INHERITANCE
-
+class Vehicle {
+    constructor(numOfWheels,manufacturer){
+        this.numOfWheels = nWheels
+        this.manufacturer = manu
+    }
+    aboutVehicle (){
+        console.log(`The vehicle is a ${manu} made by ${manu} and has ${nWheels}`)
+    }
+  
+}
 
