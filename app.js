@@ -2,46 +2,46 @@ let p1 = {
     name: {
         first: "Nathan"
     },
-    sayHello: 
-        function() {
-            console.log(`Hello! My name is ${this.name.first}`)       
-    }
+    sayHello:
+        function () {
+            console.log(`Hello! My name is ${this.name.first}`)
+        }
 }
 let p2 = {
     name: {
         first: "Jenna"
     },
-    sayHello: 
-        function() {
-            console.log(`Hello! My name is ${this.name.first}`)       
-    }
+    sayHello:
+        function () {
+            console.log(`Hello! My name is ${this.name.first}`)
+        }
 }
 let p3 = {
     name: {
         first: "Morgan"
     },
-    sayHello: 
-        function() {
-            console.log(`Hello! My name is ${this.name.first}`)       
-    }
+    sayHello:
+        function () {
+            console.log(`Hello! My name is ${this.name.first}`)
+        }
 }
 let p4 = {
     name: {
         first: "Rachel"
     },
-    sayHello: 
-        function() {
-            console.log(`Hello! My name is ${this.name.first}`)       
-    }
+    sayHello:
+        function () {
+            console.log(`Hello! My name is ${this.name.first}`)
+        }
 }
 let p5 = {
     name: {
         first: "Holden"
     },
-    sayHello: 
-        function() {
-            console.log(`Hello! My name is ${this.name.first}`)       
-    }
+    sayHello:
+        function () {
+            console.log(`Hello! My name is ${this.name.first}`)
+        }
 }
 
 p1.sayHello();
@@ -70,17 +70,24 @@ p5.sayHello();
 
 //Constructor Function
 
-function PInfo (name,city,age){
+function PInfo(name, city, age) {
     this.name = name
-    this.city =city
+    this.city = city
     this.age = age
-    console.log(`My name is ${this.name} I am ${this.age} years old and live in ${this.city}`)
-
+    PInfo.prototype.greet = function () { 
+        (`My name is ${this.name} I am ${this.age} years old and live in ${this.city}`)
+    }
 }
-    PInfo("Nathan","Norwalk",22)
-    PInfo("Jenna", "Sandusky", 24)
-    PInfo("Rachel","Strongsville",19)
-    PInfo("Paul","New London", 22)
+//
+person1 = new PInfo("Nathan", "Norwalk", 22)
+person2 = new PInfo("Jenna", "Sandusky", 24)
+person3 = new PInfo("Rachel", "Strongsville", 19)
+Person4 = new PInfo("Paul", "New London", 22)
+person1.greet()
+person2.greet()
+person3.greet()
+Person4.greet()
+//ES6 SYNTAX
 
 
 
